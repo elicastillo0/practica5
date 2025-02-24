@@ -1,11 +1,5 @@
-const login = (name, printMessage) => {
-    printMessage(name);
+
+const operation = (numero1, numero2, op) => {
+    return op(numero1, numero2)
 }
-
-login("Laura", (name) =>{
-    console.log("Hola " + name);
-})
-
-login("Laura", (name) => {
-    console.log("Hello " + name);
-})
+operation(1, 3, (a, b) => a + b)
